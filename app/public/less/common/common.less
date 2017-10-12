@@ -1,0 +1,284 @@
+/*Declaring all the varibales that are used in various .less files :-)
+All the variables and clases names are using postfix such as
+1. xs- for extra small
+2. sm- for small
+3. md- for medium
+4. lg- for large.
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+Content is divided as follows:
+1. Importing custom less.
+2. Constants.
+3. Class's
+
+*/
+
+
+/* -----------------------------------*/
+/* ---------->>> Importing less <<<-----------*/
+/* -----------------------------------*/
+@import "login";
+@import "../../font/less/variables.less";
+
+
+
+
+
+
+
+
+/* -----------------------------------*/
+/* ---------->>> Constants <<<-----------*/
+/* -----------------------------------*/
+@btn-pad : 25px;
+@blue-links : blue;
+@img-xs : 20px;
+@img-sm : 30px;
+@img-md: 56px;
+@img-lg: 80px;
+@xl-font : 25px;
+@default-font : 13px;
+@med-font : 14px;
+@lg-font : 18px;
+@nav-height : 50px;
+@footer-ht : 18px;
+@footer-pad : 15px;
+@icon : 55px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -----------------------------------*/
+/* ---------->>> Class's <<<-----------*/
+/* -----------------------------------*/
+
+
+/*-----------------------
+---------GLOBAL-------
+------------------------*/
+
+/*Box padding given to login and registration page */
+.box-pad{
+    padding: 20px 30px 4px 30px;  // top, right, bottom, and left values, respectively.
+}
+
+
+/*Class for removing all the padding of div-col-*-4  */
+
+.rem-pad{
+	padding: 0px 0px 0px 0px;   // top, right, bottom, and left values, respectively.
+}
+
+/*Shadow for login and registration  */
+.shadow{
+	box-shadow: 0px 0px 20px #888888;
+}
+
+/*Display side by side */
+.flex{
+	display: flex;
+}
+/*Border colour and size for profile page and dashboard contents */
+.border{
+	border: 1px solid #fcdada;
+}
+
+/*class for aligning logo in center(Chromium) */
+.logo{
+	height: 45px;
+	width: 45px;
+	margin: auto;
+	display: block;
+	padding: 4px 0px 0px 0px;
+}
+
+
+
+
+
+//XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXxxxx
+
+
+
+
+/*-----------------------
+---------PAGE STRUCTURE-------
+------------------------*/
+
+.nav-height{
+	height: @nav-height;
+}
+
+/*dashboard*/
+.main-box-content{
+	padding : 0px 15px 15px 15px;
+}
+
+.footer-height{
+	height: @footer-ht; 
+	
+}
+.footer-pad{
+	padding: @footer-pad @footer-pad @footer-pad @footer-pad; 
+}
+
+//Later on some addditional class's can be added here in page structure.
+
+//XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXxxxx
+
+
+/*-----------------------
+---------IMAGES STYLING-------
+------------------------*/
+/*Styling of all profile images is done here  */
+
+.profile-xs{ 				 //xs for extra small image radius
+	width : @img-xs;
+	height: @img-xs;
+
+}
+.profile-sm{				//sm for small image radius
+	width : @img-sm;
+	height: @img-sm;
+}
+.profile-md{				//md for medium image radius
+	width : @img-md;
+	height: @img-md;
+}
+.profile-lg{				//lg for large image radius
+	width : @img-lg;
+	height: @img-lg;
+}
+
+.rect-img{					//for rectangular/rounded sized images 
+	width: 130px;
+	height: 70px;
+}
+
+
+//XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXxxxx
+
+
+/*-----------------------
+---------TEXT STYLES-------
+------------------------*/
+
+//XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXxxxx
+
+/*Custom fonts*/
+@font-face {
+	font-family: 'best';
+	src: url('@{custom-font-path}/FontCustomRegular.woff2') format('woff2')
+	  
+}
+@font-face {
+	font-family: 'best1';
+	src: url('@{custom-font-path}/FontCustomBold.woff2?v=@{fa-version}') format('woff2')	  
+}
+
+/*A default font size of 13px is used where ever font-size is not mentioned */
+.font-default{
+	font-size: @default-font;
+}
+
+/*Medium font size of 14px is accessed by font-md */
+.font-md{
+	font-size: @med-font;
+}
+
+/*Large font size of 18px is accessed by font-lg */
+.font-lg{
+	font-size : @lg-font;
+}
+
+/*Larger font size of 25px is accessed by font-xl */
+.font-xl{
+	font-size: @xl-font;
+}
+
+/*"Forot passsword" is in blue color */
+.links{
+	color: @blue-links;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+}
+
+a:hover{
+	text-decoration : none;
+	color : black;
+}
+
+a:visited{
+	text-decoration : no-underline;
+	color : black;	
+}
+
+
+//XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXxxxx
+
+
+
+/*-----------------------
+---------FORMS-------
+------------------------*/
+
+/*Buttons used in design are using certain padding to thier
+left and right. "btn-pad" is used for giving button padding.
+*/
+.btn-pad{
+	padding-left: @btn-pad;
+	padding-right: @btn-pad;
+}
+
+/*border radius is defined for search box */
+.bor-rad{
+	border-radius: 25px;
+	/*width: 282px;
+	height: 53px;*/
+}
+
+.txt-field{
+	width: 282px;
+}
+
+
+//XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXxxxx
+
+
+/*-----------------------
+---------EXTRA'S-------
+------------------------*/
+
+.cust-pad-boots{   //for box-pad to work properly :-)
+	padding: 0px 45px 0px 45px;  // top, right, bottom, and left values, respectively.
+} 
+
+.icon-pad{
+	margin-top : @icon;
+}
+
+//new issue, temp solution
+.full-width{
+	overflow: hidden;
+}
+.row{
+	margin-right: 0px;
+	margin-left: 0px;
+}
+
+//XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXxxxx

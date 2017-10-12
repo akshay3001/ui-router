@@ -1,0 +1,257 @@
+/*Declaring all the varibales that are used in various .less files :-)
+
+All the variables and clases names are using prefix such as
+"cust"- stating that this is an custom class created for some custom padding of content*/
+
+
+
+/* -----------------------------------*/
+/* ---------->>> Importing less <<<-----------*/
+/* -----------------------------------*/
+@import "common";
+@import "login";
+
+
+
+
+
+
+
+/* -----------------------------------*/
+/* ---------->>> Constants <<<-----------*/
+/* -----------------------------------*/
+@side-bar : 230px;
+@profile-height : 70px;
+@heading-blue-profile : #79aeec;
+@profile-img-pad : 6px;
+@dash-bg-color: #ebf2f6;
+@dashboard-heading : 65px;
+@bor-rad : 7px;
+
+
+
+
+
+
+/* -----------------------------------*/
+/* ---------->>> Class's <<<-----------*/
+/* -----------------------------------*/
+
+
+
+/*-----------------------
+---------GLOBAL-------
+------------------------*/
+
+/*This class is used to make the side navigation bar of fixed width 230px*/
+.alpha-bar{
+    max-width: @side-bar;
+}
+
+/*Profile page and dashboard page is havinng a background color,
+this class gives bg-color to page */
+.dash-bg{
+    background-color: @dash-bg-color;
+ }
+
+/*The hamburger menu icon requires some padding to make itself in center */
+.cust-nav-header-pad{
+    padding: 10px 19px 0px 19px;
+}
+
+/*The hamburger menu icon and search box neeed to get inline,
+this class is used to align them side to side */
+.nav{
+    display: -webkit-box;
+}
+
+/*Profile page's content is having background colour, to make it separate from dash-bg colour */
+.content-bg{
+    background-color: white;
+}
+/*XXXXXXXXXXXXXXXXXXXXXXXXX */
+
+.alpha-msg-pad{
+    padding: 35px 0px 20px 0px;
+}
+
+.alpha-beta-pad{
+    padding: 0px 15px 0px 15px;
+}
+
+.rec-act{
+    padding: 10px 20px 10px 15px;
+}
+
+
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+/*-----------------------
+---------PAGE STRUCTURE-------
+------------------------*/
+
+/*Alpha side bar styling is written here
+------------------*/
+
+/*the blue color below the logo block is defined here */
+.profile-bg{  //the blue color bar at the top of dashboard ani profile page
+    background-color: @heading-blue-profile;
+    height : @profile-height;
+}
+
+/*THe alpha side bar is having username, "John De" so this
+class is usde to give padding to username */
+.user-name{
+    padding: 10px 0px 0px 30px;
+}
+
+/*THe alpha side bar is having user's status i.e online and offline, so this
+class is used to give padding to status */
+.user-status{
+    padding: 7px 0px 0px 0px;
+}
+
+/*XXXXXXXXXXXXXXXXXXXXXXXXXX*/
+
+/*The Alpha bar is having navigations such as Menu, Dashboard, sample link1, samplelink2
+this part of less is having style to those
+------------------------*/
+
+/*Every navigation heading i.e Menu, Dashboard, samplelink1 is having certain padding
+to keep the content in middle, */
+.nav-head{
+    padding: 10px 10px 10px 19px;
+}
+
+/*this class is used to arrange the drawer icon onright side of aplha bar */
+.nav-menu{
+    padding: 0px 80px 0px 10px;
+}
+
+/*Dashboard drwaer on right side is not aligned properly.
+This class is used to give proper alignment
+ */
+.nav-menu-cust{
+    padding: 0px 90px 0px 10px;
+}
+
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+
+/*Dashboard heading
+------------------------- */
+
+/*"DASHBOARD" needs to be properly aligned in center*/
+.dash-head{
+    height: @dashboard-heading;
+    padding-top: 14px;
+}
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+/*profile page form needs padding to their right of 10px
+----------------------------- */
+
+/*as is used to separate the name and email text input fields by 10px each on their right */
+.as{
+    padding-right: 10px;
+}
+
+.border-rad{
+    border-radius:  @bor-rad;
+}
+
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+/*-----------------------
+---------NAVIGATIONS-------
+------------------------*/
+
+/*The search bar at the top of the page reqiures some padding to
+keep the search bar in center */
+.nav-search-pad{
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+/*the header is having email, notification icon and user profile image
+and user name on right sides */
+.nav-head-right{
+    height: 40px;
+    width: 200px;
+}
+
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+
+/*-----------------------
+---------IMAGES-------
+------------------------*/
+
+/*Left nav bar is having a profile details such as name and profile image.
+this classs is used to give padding to that image */
+.prof-img-pad{
+    padding: @profile-img-pad 0px 0px @profile-img-pad;
+}
+
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+
+/*-----------------------
+---------EXTRA'S-------
+------------------------*/
+.social-twitter{
+    background-color: #1da1f2;
+    height : 150px;
+    border-radius : 7px;
+    color: white;
+}
+
+.social-face{
+    background-color: #0B6298;
+    height : 150px;
+    border-radius : 7px;
+    color: white;
+}
+
+.center-icon{
+    margin : auto;
+    display: table;
+    padding: 20px 0px 0px 0px;
+}
+
+.soc-text{
+    text-align: center;
+    padding: 20px 0px 0px 0px;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

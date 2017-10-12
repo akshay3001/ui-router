@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en" ng-app="app">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Index</title>
+    <!-- links to bootstrap, font-awesome and custom css-->
+    <link rel="stylesheet" href="dist/css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="dist/css/font/font-awesome.css">
+    <link rel="stylesheet" href="dist/css/common/common.css">
+    <!--Ends here -->
+
+
+
+</head>
+
+<body class="full-width">
+    <div ui-view="dashboard"></div>
+    <div ui-view="footer"></div>
+    <div ui-view></div>
+
+
+
+
+    <!--Scripts are written here for angular and angular route   -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.js"></script>
+    <script src="module/app.js"></script>
+    <script src="routes/routes.js"></script>
+    <!-- ends here -->
+</body>
+
+</html>
