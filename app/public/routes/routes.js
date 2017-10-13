@@ -17,8 +17,26 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
             templateUrl: '../view/header.html'
         })
 
+        .state("footer", {
+            url: "/footer",
+            templateUrl: '../view/footer.html'
+        })
 
-        .state("dashboard" , {
+        .state("dashboard", {
+            url: "/dashboard",
+            views : {
+                "header" : {
+                    templateUrl : "../view/footer.html" 
+                }
+            }
+        })
+
+        .state("dashboard.header", {
+            url: "/dashboard/header",
+            templateUrl: '../view/header.html'
+        })
+
+        .state("dashboard1" , {
 			url : "/dashboard",
 			views : {
 				
