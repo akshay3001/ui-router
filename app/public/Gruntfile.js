@@ -34,29 +34,39 @@ module.exports = function (grunt) {
       }
   },*/
 
-  copy: {
-  files: {
-  cwd: 'images', // set working folder / root to copy
-  src: ['**/*.jpg', '**/*'], // copy all files and subfolders
-  dest: 'dist/images', // destination folder
-  expand: true // required when using cwd
-  }
-  }, 
+  //copy: {
+  //files: {
+  //cwd: 'images', // set working folder / root to copy
+  //src: ['**/*.jpg', '**/*'], // copy all files and subfolders
+ // dest: 'dist/images', // destination folder
+  //expand: true // required when using cwd
+ // }
+  //}, 
    
   /*
   for copying multipe folders remove currrent working directory*/
-    //copy: {
-   // files: {
-    //src: ['view/**/*','documentation'], // copy all files and subfolders
-    //dest: 'dist/mhatre', // destination folder
-    //expand: true // required when using cwd
-    //}
-    //},
+    copy: {
+    files: {
+    src: ['view/**/*','documentation'], // copy all files and subfolders
+    dest: 'dist/mhatre', // destination folder
+    expand: true // required when using cwd
+    }
+    },
 
 
 
-  
-  
+    cssmin: {
+      target: {
+        files: [{
+          expand: true,
+          src: ['akshay/bootstrap/*.css', '!*.min.css'],
+          dest: 'akshay/',
+          ext: '.min.css'
+        }]
+      }
+    },
+
+
     watch: {
       styles: {
         files: ['less/**/*.less'], // which files to watch
@@ -71,6 +81,7 @@ module.exports = function (grunt) {
   //grunt.loadNpmTasks('grunt-uncss');
   //grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.registerTask('default', ['less', 'copy', 'watch']);
+  grunt.loadNpmTasks('grunt-contrib-cssmin');
 
   //grunt.registerTask('default', ['uncss', 'cssmin']);
 };
